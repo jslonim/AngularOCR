@@ -1,23 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { ImageUploadComponent } from './image-upload/image-upload.component';
-import { ImageUploadService } from './image-upload/image-upload.service';
+import { AppService } from './app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    ImageUploadComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ImageCropperModule,
+    HttpClientModule
   ],
-  providers: [ImageUploadService],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

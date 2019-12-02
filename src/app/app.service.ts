@@ -6,7 +6,7 @@ import { catchError } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class ImageUploadService {
+export class AppService {
 
   constructor(private http: HttpClient) { }
 
