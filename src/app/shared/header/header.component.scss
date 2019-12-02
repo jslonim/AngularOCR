@@ -1,0 +1,15 @@
+$alizarin: #e74c3c;
+.header{
+    height:50px;
+    width:100%;
+    background-color: $alizarin;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color:white;
+    font-size:30px;
+    font-family: 'Brush Script MT';
+    font-weight: 'bold';
+}

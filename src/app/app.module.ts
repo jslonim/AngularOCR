@@ -5,10 +5,12 @@ import { ImageCropperModule } from 'ngx-image-cropper';
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

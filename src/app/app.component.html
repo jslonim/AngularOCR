@@ -1,16 +1,19 @@
- <input type="file" (change)="fileChangeEvent($event)" />
+<html>
+<header></header>
 
- <image-cropper
-     [imageChangedEvent]="imageChangedEvent"
-     [maintainAspectRatio]="false"
-     [aspectRatio]="4 / 3"
-     [resizeToWidth]="0"
-     format="png"    
-     (imageCropped)="imageCropped($event)"
-     (imageLoaded)="imageLoaded()"
-     (cropperReady)="cropperReady()"
-     (loadImageFailed)="loadImageFailed()"
- ></image-cropper>
+<body>
+    <app-header></app-header>
+    
+    <input type="file" (change)="fileChangeEvent($event)" />
 
- <button (click)="cropImage()">OCR MAGIC, BABY!</button>
- <h1>{{transcriptedText}}</h1>
+    <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="false" [aspectRatio]="4 / 3"
+        [resizeToWidth]="0" format="png" (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded()"
+        (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()"></image-cropper>
+
+    <button (click)="cropImage()">OCR MAGIC, BABY!</button>
+
+    <h1>{{transcriptedText}}</h1>
+
+</body>
+
+</html>
