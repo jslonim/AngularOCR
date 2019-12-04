@@ -18,7 +18,7 @@ export class AppService {
 
     let headers = new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded',
-      'apikey': '5becd9826388957'
+      'apikey': 'API_KEY'
     });
 
     let options = { headers: headers };
