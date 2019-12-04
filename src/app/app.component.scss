@@ -1,0 +1,38 @@
+@import '../assets/styles/styles.scss';
+
+.fileContainer{
+    padding: 15px;
+    background-color: $cloud;
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid $silver;
+}
+.app-wrapper{
+    padding:50px;
+}
+.imgConteiner{
+    margin-top:10px;
+    width:500px;
+    height:500px;
+    background-color: $cloud;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid $silver;
+}
+.result{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    height:50px;
+    padding:10px;
+    font-size: 20px;
+    color:white;
+    background-color: $alizarin;
+    border-radius:10px;
+    border:0px;
+}
